@@ -1,0 +1,174 @@
+body {
+  background-color: rgb(0,0,20,.9);
+}
+#box {
+    background-image: url("https://wallpaperaccess.com/full/979454.jpg");
+    /*background-color: black;*/
+    background-position: top;
+    background-size: 2170px;
+    padding: 20px;
+    width: 740px;
+    height: 740px;
+    margin: auto;
+    border-radius: 10%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+#title {
+  text-align: center;
+  font-size: 60px;
+  color: black;
+  text-shadow: 2px -2px lightblue;
+  /*background-color: black;*/
+  width: 600px;
+  display: block;
+  margin: auto;
+  font-family: Righteous, Monospace;
+  animation: guessFlash 12s infinite;
+}
+@keyframes guessFlash {
+  0% {
+    color: lightblue;
+    text-shadow: 2px -2px black;
+  }
+  25% {
+    color: black;
+    text-shadow: 2px -2px lightblue;
+  }
+  50% {
+    color: lightblue;
+    text-shadow: 2px -2px black;
+  } 
+  75% {
+    color: black;
+    text-shadow: 2px -2px lightblue;
+  }
+  100% {
+    color: lightblue;
+    text-shadow: 2px -2px black;
+  }
+}
+#instructions {
+  text-align: center;
+  text-shadow: 1px -2px white;
+  font-size: 28px;
+  margin-top: -10px;
+  padding: 20px;
+}
+#enterText {
+  color: white;
+  font-size: 30px;
+}
+#triesLeft {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 10px;
+  text-shadow: 2px -2px 1.5px black;
+}
+#triesLeftCount {
+  text-align: center;
+  font-size: 80px;
+  margin-top: -8px;
+  color: white;
+  text-shadow: 2px 2px 9px black;
+}
+.white {
+  color: black;
+  text-shadow: 2px -2px lightblue;
+  font-size: 30px;
+}
+#enterNumber {
+  display: flex;
+  justify-content: center;
+  visibility: hidden;
+}
+#numberInput {
+  align-self: center;
+  text-align: center;
+  margin-top: 1px;
+  margin-left: 10px;
+}
+#displayText {
+  text-align: center;
+  color: white;
+  font-size: 50px;
+  text-shadow: 4px 1px 2px black;
+  visibility: hidden;
+  margin-top: -50px;
+}
+#button {
+  width: 100px;
+  font-size: 20px;
+  margin: auto;
+  background-color: lightblue;
+  border: 1px lightblue;
+  color: black;
+  border-radius: 10px;
+}
+#button:hover {
+  color: black;
+  background-color: white;
+  border: 10px white;
+  border-radius: 10px;
+}
+#guess {
+  font-size: 15px;
+  color: black;
+  background-color: lightblue;
+  border: 10px lightblue;
+  height: 20px;
+  border-radius: 10px;
+  margin-top: 38px;
+  margin-left: 10px;
+}
+#guess:hover {
+  color: white;
+  background-color: black;
+  border: 10px black;
+  border-radius: 10px;
+}
+#numbersUsed {
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  text-shadow: 1px 4px 4px black;
+}
+#resetButton {
+  width: 100px;
+  font-size: 20px;
+  margin: auto;
+  background-color: lightblue;
+  border: 1px lightblue;
+  color: black;
+  border-radius: 10px;
+  visibility: hidden;
+}
+#resetButton:hover {
+  color: black;
+  background-color: white;
+  border: 10px white;
+  border-radius: 10px;
+}
+
+/*Mobile Friendly Version*/
+@media only screen and (max-width: 810px) {
+  #box {
+    background-image: url('https://wallpaperaccess.com/full/1773008.png');
+  }
+  #title {
+    font-size: 30px;
+    width: 300px;
+  }
+  #box {
+    width: 330px;
+    border-radius: 10px;
+  }
+  #instructions, .white, #triesLeft, #numbersUsed, #triesLeftCount {
+    font-size: 20px;
+  }
+  #guess {
+    margin-bottom: 40px;
+  }
+}
